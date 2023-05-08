@@ -1,11 +1,11 @@
 /* ROOT */
-:root{
+:root {
   /* --header-bg-color: #fff; */
   /* --main-bg-color: #fff; */
   /* --main-text-color: #fff; */
 }
 
-html{
+html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
@@ -17,17 +17,17 @@ html{
   box-sizing: inherit;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: "Arial", sans-serif;
   font-weight: 400;
-  background-color: #fff;
+    background: #1fbeca !important;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -45,7 +45,7 @@ img{
   overflow: hidden;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1320px;
   margin-right: auto;
@@ -55,17 +55,14 @@ img{
 }
 
 ol,
-ul{
+ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
-.new-class{
-  background-color: deeppink;
-  padding: 20px;
-}
+

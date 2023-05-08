@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css"
 
 function Practics() {
   const [state, setState] = useState([]);
@@ -20,12 +21,17 @@ function Practics() {
 
   if (loading) {
     return (
-      <div className="container d-flex justi">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif"
-          alt=""
-        />
-      </div>
+      <div class="loader">
+      <div class="square" ></div>
+      <div class="square"></div>
+      <div class="square last"></div>
+      <div class="square clear"></div>
+      <div class="square"></div>
+      <div class="square last"></div>
+      <div class="square clear"></div>
+      <div class="square "></div>
+      <div class="square last"></div>
+    </div>
     );
   }
 
