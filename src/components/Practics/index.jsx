@@ -9,7 +9,7 @@ function Practics() {
   useEffect(() => {
     setLoading(true);
     fetch(
-      "https://newsapi.org/v2/everything?q=tesla&from=2023-04-08&sortBy=publishedAt&apiKey=39c5cc20ab7343b5ae242b9a1141fb55"
+      "https://newsapi.org/v2/everything?q=apple&from=2023-05-08&to=2023-05-08&sortBy=popularity&apiKey=39c5cc20ab7343b5ae242b9a1141fb55"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -21,22 +21,24 @@ function Practics() {
 
   if (loading) {
     return (
-      <div class="loader">
-      <div class="square" ></div>
-      <div class="square"></div>
-      <div class="square last"></div>
-      <div class="square clear"></div>
-      <div class="square"></div>
-      <div class="square last"></div>
-      <div class="square clear"></div>
-      <div class="square "></div>
-      <div class="square last"></div>
+      <div className="loader">
+      <div className="square" ></div>
+      <div className="square"></div>
+      <div className="square last"></div>
+      <div className="square clear"></div>
+      <div className="square"></div>
+      <div className="square last"></div>
+      <div className="square clear"></div>
+      <div className="square "></div>
+      <div className="square last"></div>
     </div>
     );
   }
 
   return (
     <div className="container">
+      <h1 className="text-center my-4">News Site </h1> 
+
       <div className="row">
         {state?.articles.length > 0 &&
           state?.articles.map((item, index) => (
@@ -44,7 +46,7 @@ function Practics() {
               <div className="card"  style={{border: "none", boxShadow:"0px 5px 10px 2px rgba(34, 60, 80, 0.2)", borderRadius:""}}>
                 <img
                   src={item.urlToImage}
-                  className="card-img-top"
+                  className="card-img-top news-img"
                   alt={item.title}
                 />
                 <div className="card-body card-height">

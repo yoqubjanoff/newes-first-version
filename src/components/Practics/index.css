@@ -154,3 +154,6 @@
   .last {
     margin-right: 0;
   }
+  .news-img{
+    width: 416px !important;
+  }
